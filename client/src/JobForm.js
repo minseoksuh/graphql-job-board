@@ -18,7 +18,6 @@ export class JobForm extends Component {
     const input = {
       title: this.state.title,
       description: this.state.description,
-      companyId: "HJRa-DOuG",
     };
 
     createJob(input).then((job) => {
