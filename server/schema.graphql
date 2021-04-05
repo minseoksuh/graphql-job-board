@@ -3,6 +3,10 @@ type Query {
   job(id: ID!): Job
   jobs: [Job]
 }
+# accepting single input considered good practice. makes easier for the client to use
+type Mutation {
+  creatJob(input: CreateJobInput): Job
+}
 
 type Company {
   id: ID!
@@ -16,4 +20,10 @@ type Job {
   title: String
   description: String
   company: Company
+}
+
+input CreateJobInput {
+  companyId: ID
+  title: String
+  description: String
 }
