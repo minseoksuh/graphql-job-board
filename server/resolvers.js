@@ -9,7 +9,7 @@ const Query = {
 };
 
 const Mutation = {
-  creatJob: (root, { input }, { user }) => {
+  createJob: (root, { input }, { user }) => {
     if (!user) {
       throw new Error("Unauthorized");
     }

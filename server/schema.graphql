@@ -5,7 +5,7 @@ type Query {
 }
 # accepting single input considered good practice. makes easier for the client to use
 type Mutation {
-  creatJob(input: CreateJobInput): Job
+  createJob(input: CreateJobInput): Job
 }
 
 type Company {

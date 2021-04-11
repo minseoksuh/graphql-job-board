@@ -21,7 +21,6 @@ export class JobForm extends Component {
     };
 
     createJob(input).then((job) => {
-      console.log({ job });
       this.props.history.push(`/jobs/${job.id}`);
     });
   }
